@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    #search_results {
+      display: grid;
+      grid-template-columns: repeat(4, 20%);
+      grid-gap: 5%;
+
+      justify-content: space-between;
+      margin-top: 5%;
+    }
+    #body
+    {
+        width: 100%;
+    }
+    #partition
+    {
+        width: 100%;
+        display: flex;
+        height: auto;
+        margin-bottom: 50px;
+    }
+  </style>
+
+  <body>
+    <div id="yt_body">
+        <div id="navbar">
+            <div id="menu"></div>
+            <div id="searchArea"></div>
+            <div id="rightIcon"></div>
+        </div>
+        <div id="partition">
+            <div id="difpageLink"></div>
+            <div id="videoDisplayArea"></div>
+
+
+        </div>
+    </div>
+    <h1>Youtube</h1>
+
+    <input type="text" id="search" />
+
+    <button onclick="searchVideos()">Search</button>
+
+    <div id="search_results"></div>
+  </body>
+</html>
+<script src="We_youtube.js"></script>

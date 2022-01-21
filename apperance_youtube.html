@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #body
+        {
+            display:flex;
+        }
+        #yt_navbar
+        {
+            padding: auto;
+            display:flex;
+            width: 100%;
+        }
+        
+        #vertical
+        {
+            width: 15%;
+            /* height: 300px; */
+        }
+        #firstdiv
+        {
+            width: 15%;
+            display: flex;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        #firstdiv>span
+        {
+            margin-left: 5px;
+        }
+        #drop_menu>#hr
+        {
+            width: 45px;
+            /* border: 1px solid transparent; */
+            /* height: 40px; */
+            padding-top: 0px;
+            margin-left: 10px;
+            margin-right: 10px;
+            height:0px;
+            border-radius: 20px;
+            /* border: 1px solid red; */
+        }
+        #drop_menu>#hr>img
+        {
+            width: 40px;
+            height: 40px;
+            margin-top:-10px;
+            border-radius: 30px;
+            border : transparent solid 1px;
+        }
+        #drop_menu>#hr>img:hover{
+            background-color: lightgray;
+        }
+
+        .left 
+        {
+            margin-top: 10px;
+            width: 100%;
+            background-color: white;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            height: 650px;
+
+        }
+        .sidebar-item:hover
+        {
+            /* display: block; */
+            background-color: lightgray;
+        }
+        .sidebar-item 
+        {
+            display: block;
+            height: 30px;
+            padding-top: 6px;
+            background-color: white;
+            padding-left: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+       
+        .colorCHnag
+        {
+            color: rgba(19, 18, 18, 0.952);
+            font-size: 16px;
+            cursor: pointer;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #vert_drop
+        {
+            width: 100%;
+            height: 40px;
+            border: 1px solid red;
+        }
+        #vertical_everything
+        {
+            width: 85%;
+        }
+        
+        #seconddiv
+        {
+            width: 65%;
+        }
+        #thirdDiv
+        {
+            width: 35%;
+        }
+        #nav_yt_icon
+        {
+            width: 35px;
+            height: 25px;
+        }
+        #yt_navbar>div{
+            display: flex;
+        }
+        #search_in_yt
+        {
+            width: 75%;
+            margin-left: 24%;
+            height: 35px;
+            font-size: 20px;
+            padding-left: 10px;
+        }
+        #mic_search
+        {
+
+            margin-left: 10px;
+            margin-top: 5px;
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            /* background-image: url("youtubemic.png"); */
+            background-color: whitesmoke;
+            border: 1px solid red;
+            margin-right: 50px;
+        }
+        button
+        {
+            width: 80px;
+            height: 40px;
+            border:2px;
+            padding: 0px;
+            background-image: url("magnifying_glass.png");
+            border: solid 1px darkgray;
+        }
+        #rigthImg
+        {
+            /* width: 20%; */
+            height: 30px;
+            margin-top: 5px;
+            margin-right: 24px;
+        }
+        #yt_navbar>#thirdDiv>div +div{
+            justify-content: space-between;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+        <div id="yt_navbar">
+            <div id="firstdiv"><div id="drop_menu"><div id="hr"><img src="menu icone.png"></div></div><img id ="nav_yt_icon" src="icone youtube.png"><span>YouTube</span></div>
+            <div id="seconddiv"><input id="search_in_yt" type="text" placeholder="Search"><button></button><img id="mic_search"src="youtubemic.png"></div>
+            <div id="thirdDiv"><div style="width: 40%;"></div><div ><img id="rigthImg" src="video adding icon.png"><img id="rigthImg" src="user interface.png"><img id="rigthImg" src="ibell ghanti.png"><img style="border-radius: 16px;" src="profile_picture_user_icon_153847.png"></div></div>
+        </div>
+        <div id="body">
+            <div id="vertical">
+                <div class="left">
+                    <div class="sidebar-item"><img><span>Home</span></div>
+                    <div class="sidebar-item"><img><span>Explore</span></div>
+                    <div class="sidebar-item">Subscriptions</div>
+                    <hr>
+                    <div class="sidebar-item">Library</div>
+                    <div class="sidebar-item">History</div>
+                    <div class="sidebar-item">Your Videos</div>
+                    <div class="sidebar-item">Watch Later</div>
+                    <div class="sidebar-item">Show more</div>
+                    <hr>
+                    <div class="sidebar-item colorCHnag">SUBSCRIPTIONS</div>
+                    <hr>
+                    <div class="sidebar-item colorCHnag">MORE FROM YOUTUBE</div>
+                    <div class="sidebar-item">YouTube Premium</div>
+                    <div class="sidebar-item">Movies</div>
+                    <div class="sidebar-item">Gaming</div>
+                    <div class="sidebar-item">Live</div>
+                    <div class="sidebar-item">Fashion & Beauty</div>
+                    <div class="sidebar-item">Learning</div>
+                    <hr>
+                    <div class="sidebar-item">Settings</div>
+                    <div class="sidebar-item">Report History</div>
+                    <div class="sidebar-item">Help</div>
+                    <div class="sidebar-item">Send FeedBack</div>
+                    <hr>
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+            <div id="vertical_everything">
+            <hr>
+            </div>
+        </div>
+   
+    
+</body>
+</html>
