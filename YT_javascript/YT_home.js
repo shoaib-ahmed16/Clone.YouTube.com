@@ -1,8 +1,7 @@
-function youtube_home_layout()
-{
-    return `<div id="yt_navbar">
+function youtube_home_layout() {
+  return `<div id="yt_navbar">
     <div id="firstdiv"><div id="drop_menu"><div id="hr"><img src="./CompImages/menu icone.png"></div></div><img id ="nav_yt_icon" src="./CompImages/icone youtube.png"><span>YouTube</span></div>
-    <div id="seconddiv"><input id="search_in_yt" type="text" placeholder="Search"><div id="sample"></div><img id="mic_search" src=".CompImages/youtubemic.png"></div>
+    <div id="seconddiv"><input id="search_in_yt" type="text" placeholder="Search"><div ><img id="sample" src="./CompImages/searchMirror.jpg"></div><img id="mic_search" src="./CompImages/youtubemic.png"></div>
     <div id="thirdDiv"><div style="width: 40%;"></div><div><img id="rigthImg" src="./CompImages/video adding icon.png"><img id="rigthImg" src="./CompImages/user interface.png"><img id="rigthImg" src="./CompImages/ibell ghanti.png"><img id="rigthImg" style="border-radius: 16px;" src="./CompImages/profile_picture_user_icon_153847.png"></div></div>
 </div>
 <div id="body">
@@ -45,4 +44,4 @@ function youtube_home_layout()
 </div>`
 }
 
-export default youtube_home_layout;
+export default youtube_home_layout
